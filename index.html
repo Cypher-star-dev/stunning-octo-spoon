@@ -1,1 +1,99 @@
-
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>HTML Lists, Images, Titles</title>
+        </head>
+        <body>
+            <h2>HTML Lists</h2>
+            <h3>Ordered Lists</h3> <!--This is where Ordered list begins-->
+            <ol type="I" start="1"> <!--The type "I" is for Roman Numerals and it "starts" from the first Roman numeral-->
+                <li>Toyota</li>
+                <li>Mitsubishi</li>
+                <li>Subaru</li>
+                <li>Daihatsu</li> <!--I know I'm old fashioned-->
+                <li>Nissan</li>
+             </ol>
+             <h2>HTML Image</h2> <!--An image from pexels, had a hard time choosing one. Please specify an image next time instructors :D-->
+             <img src="https://images.pexels.com/photos/1496373/pexels-photo-1496373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Forest Wallpaper" height="600" width="600">
+             <h3>Table</h3> <!--Table of contacts with name,address, mobile, and emails-->
+            <table border="7"> <!--A table with user details-->
+                <caption>Contact Details</caption> <!--Adding contact details-->
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mary</td>
+                        <td>04 Street</td>
+                        <td>0711111111</td> <!--I was going to write 07SAFARICOM then realized you'll be serious when scoring this-->
+                        <td>Mary@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Eugene</td>
+                        <td>Route 66</td>
+                        <td>0798989898</td>
+                        <td>eugene@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Nairobi Street</td>
+                        <td>0712345678</td>
+                        <td>Mark@outlook.com</td>
+                    </tr>
+                    <tr>
+                        <td>Jackline</td>
+                        <td>01 Lane</td>
+                        <td>0798765432</td>
+                        <td>Jackline@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Alex</td>
+                        <td>Kampala Street</td>
+                        <td>0719283746</td>
+                        <td>alex@gmail.com</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+            <h3>Registration form</h3> <!--The registration form where users will register-->
+            <form action="" method="">
+                <label for="full_name">Full Name:</label> <!--Their Full name-->
+                <input type="text" id="full_name" name="full_name" placeholder="Enter your full name here" required="">
+                <br><br>
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="male" required="">Male
+                <input type="radio" id="female" name="gender" value="female" required="">Female
+                <br><br>
+                <label for="email">Email:</label> <!--Their email address-->
+                <input type="email" id="email" name="email" placeholder="Enter your email" required="">
+                <br><br>
+                <label for="password">Password:</label> <!--For the user to enter a password-->
+                <input type="password" id="password" name="password" placeholder="Enter your password here" required="">
+                <br><br>
+                <label for="Date">Date:</label> <!--For the user to select a date-->
+                <input type="date" id="Date" name="Date" required="">
+                <br><br>
+                <label for="languages">Languages</label>
+                <input type="checkbox" id="swahili" name="languages" value="Swahili">Swahili
+                <input type="checkbox" id="english" name="languages" value="English">English
+                <input type="checkbox" id="luganda" name="languages" value="Luganda">Luganda
+                <br><br>
+                <label for="country">Country</label> <!--I added this because name, email, mobile, and address can't have dropdowns because I don't know the user-->
+                <select name="Country" id="country">
+                    <option>Select Country</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="Uganda">Uganda</option>
+                    <option value="Tanzania">Tanzania</option>
+                </select>
+                <input type="submit" value="register">
+                <button type="reset">Cancel</button>
+            </form>
+        </body>
+        </html>
